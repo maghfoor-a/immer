@@ -1,7 +1,10 @@
+import GameBoard from "./components/GameBoard";
+import "./styles.css"
+
 function App() {
   return (
     <>
-      <h1>Vite React TypeScript Template!</h1>
+      <GameBoard />
     </>
   );
 }
