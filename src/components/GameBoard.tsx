@@ -8,8 +8,8 @@ export default function GameBoard(): JSX.Element {
             <div className="all-cards">
                 {allCards.map(card => {
                     return (
-                        <div key={card.id} className="card">
-                            <p >{card.emoji}</p>
+                        <div key={card.id} className={`card ${card.life}`}>
+                            {card.life === "faceUp" && <p>{card.emoji}</p>}
                         </div>
                     )
                 })}
