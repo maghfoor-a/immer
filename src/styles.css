@@ -1,8 +1,14 @@
 .all-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
     font-size: 4rem;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    user-select: none;
+    cursor: pointer;
 }
