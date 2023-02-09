@@ -1,14 +1,30 @@
 .all-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
 }
 
 .card {
-    font-size: 4rem;
+    font-size: 3.5rem;
     border: 1px solid black;
     display: grid;
     place-items: center;
     aspect-ratio: 1;
     user-select: none;
     cursor: pointer;
+    border-radius: 10px;
 }
+
+.faceDown {
+    opacity: 0;
+}
+
+.faceUp {
+    background: #EEEE;
+}
+.faceDown {
+    /* https://www.magicpattern.design/tools/css-backgrounds */
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: repeating-linear-gradient(-45deg, #afb3ff, #afb3ff 5px, #e5e5f7 5px, #e5e5f7 25px);
+  }
